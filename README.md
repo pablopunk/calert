@@ -13,7 +13,7 @@
 
 ## To do
 
-- [ ] Local data storage
+- [x] Local data storage - Maybe not necessary. Use node-persist if it is.
 - [ ] Retrieve calendar events
 - [ ] Schedule notifications for current events
 - [ ] Subscribe to changes in calendar to sync locally (use api watches)
