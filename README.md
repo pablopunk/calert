@@ -13,12 +13,12 @@
 
 ## To do
 
-- [  ] Local data storage
-- [  ] Retrieve calendar events
-- [  ] Schedule notifications for current events
-- [  ] Subscribe to changes in calendar to sync locally (use api watches)
-- [  ] Make CLI
-- [  ] Create a daemon
+- [ ] Local data storage
+- [ ] Retrieve calendar events
+- [ ] Schedule notifications for current events
+- [ ] Subscribe to changes in calendar to sync locally (use api watches)
+- [ ] Make CLI
+- [ ] Create a daemon
 
 Other ideas for the future
 
