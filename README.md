@@ -11,6 +11,20 @@
 </p>
 
 
+## To do
+
+- [  ] Retrieve calendar events
+- [  ] Schedule notifications for current events
+- [  ] Subscribe to changes in calendar to sync locally (use api watches)
+- [  ] Make CLI
+- [  ] Create a daemon
+
+Other ideas for the future
+
+- Support multiple accounts
+- Create events/reminders
+
+
 ## Install
 
 ```sh
