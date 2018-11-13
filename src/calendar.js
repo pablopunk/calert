@@ -1,10 +1,10 @@
 const pify = require('pify')
 const { google } = require('googleapis')
 
-module.exports.list = async client => {
-  const calendar = google.calendar({ version: 'v3', client })
+module.exports.list = async auth => {
+  const calendar = google.calendar({ version: 'v3', auth })
 
-  google.calendar = pify(calendar.events.list)
+  calendar.events.list = pify(calendar.events.list)
 
   const results = await calendar.events.list({
     calendarId: 'primary',
