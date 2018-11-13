@@ -40,6 +40,16 @@ $ calert
 ```
 
 
+## Development
+
+* Clone the repo
+* Sign up for [Google Calendar API](https://developers.google.com/calendar/)
+* Create a new app
+* Enable billing (allows continued use)
+* Download the JSON with the credentials and place it in your repo in a `credentials.json`
+* That's it
+
+
 ## License
 
 MIT
