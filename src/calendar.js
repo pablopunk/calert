@@ -8,7 +8,7 @@ module.exports.list = async client => {
 
   const results = await calendar.events.list({
     calendarId: 'primary',
-    timeMin: (new Date()).toString(),
+    timeMin: (new Date()).toISOString(),
     maxResults: 10,
     singleEvents: true,
     orderBy: 'startTime'
