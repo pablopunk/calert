@@ -18,7 +18,7 @@
 - [x] Schedule notifications for current events
 - [ ] Subscribe to changes in calendar to sync locally (use api watches)
 - [x] Make CLI
-- [ ] Create a daemon
+- [ ] Create a daemon (https://www.npmjs.com/package/os-service)
 
 Other ideas for the future
 
