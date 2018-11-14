@@ -4,7 +4,7 @@ const fs = pify(require('fs'))
 const readline = require('readline-promise').default
 const opn = require('opn')
 
-async function authorize () {
+async function authorize (loggingIn = false) {
   const credentials = require('../credentials.json')
   // eslint-disable-next-line camelcase
   const { client_secret, client_id, redirect_uris } = credentials.installed
@@ -18,6 +18,10 @@ async function authorize () {
       return authClient
     })
     .catch(_ => {
+      if (!loggingIn) {
+        console.log('You need to login first.\n\ncalert login\n')
+        return false
+      }
       return getAccessToken(authClient)
     })
 }

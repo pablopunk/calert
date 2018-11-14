@@ -14,10 +14,10 @@
 ## To do
 
 - [x] Local data storage - Maybe not necessary. Use node-persist if it is.
-- [ ] Retrieve calendar events
-- [ ] Schedule notifications for current events
+- [x] Retrieve calendar events
+- [x] Schedule notifications for current events
 - [ ] Subscribe to changes in calendar to sync locally (use api watches)
-- [ ] Make CLI
+- [x] Make CLI
 - [ ] Create a daemon
 
 Other ideas for the future
