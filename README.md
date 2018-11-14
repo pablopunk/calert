@@ -19,6 +19,7 @@
 - [ ] Subscribe to changes in calendar to sync locally (use api watches)
 - [x] Make CLI
 - [ ] Create a daemon (https://www.npmjs.com/package/os-service)
+- [ ] Use [pkg](https://github.com/zeit/pkg)
 
 Other ideas for the future
 
