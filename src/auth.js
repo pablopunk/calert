@@ -4,7 +4,7 @@ const fs = pify(require('fs'))
 const readline = require('readline-promise').default
 const opn = require('opn')
 
-async function authorize (loggingIn = false) {
+async function authorize () {
   const credentials = require('../credentials.json')
   // eslint-disable-next-line camelcase
   const { client_secret, client_id, redirect_uris } = credentials.installed
@@ -13,15 +13,11 @@ async function authorize (loggingIn = false) {
   authClient.getToken = pify(authClient.getToken)
 
   return fs.readFile('token.json')
-    .then((token) => {
+    .then(token => {
       authClient.setCredentials(JSON.parse(token))
       return authClient
     })
     .catch(_ => {
-      if (!loggingIn) {
-        console.log('You need to login first.\n\ncalert login\n')
-        return false
-      }
       return getAccessToken(authClient)
     })
 }
@@ -40,10 +36,11 @@ async function getAccessToken (authClient) {
     .then(code => {
       rl.close()
       return authClient.getToken(code)
-        .then(token =>
-          fs.writeFile('token.json', JSON.stringify(token))
+        .then(token => {
+          authClient.setCredentials(token)
+          return fs.writeFile('token.json', JSON.stringify(token))
             .then(_ => authClient)
-        )
+        })
     })
 }
 
