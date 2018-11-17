@@ -18,3 +18,5 @@ module.exports.getCronInfoFromEvent = e => {
 
   return cron.join(' ')
 }
+
+module.exports.getEventId = e => e.etag
