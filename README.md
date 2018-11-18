@@ -17,9 +17,10 @@
 - [x] Retrieve calendar events
 - [x] Schedule notifications for current events
 - [x] Make CLI
+- [x] Create a daemon (https://www.npmjs.com/package/os-service)
+- [ ] Make it work with sudo
 - [ ] Subscribe to changes in calendar to sync locally (use api watches)
-- [ ] Create a daemon (https://www.npmjs.com/package/os-service)
-- [ ] Target [macOS](https://github.com/coreybutler/node-mac) too
+- [ ] Target [macOS service](https://github.com/coreybutler/node-mac) too
 - [ ] Use [pkg](https://github.com/zeit/pkg)
 
 Other ideas for the future
